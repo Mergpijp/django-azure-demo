@@ -6,4 +6,5 @@ from franciscan_records import views
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('wordcloud/', views.wordcloud, name='wordcloud'),
 ]

@@ -3,6 +3,17 @@
   <head>
   </head>
   <body>
-    <h1>Hello, world! This is my friend franciscan_records tracker app.</h1>
+    <a href="/wordcloud/">Analytics</a>
+    <form class="form-inline my-2 my-lg-0">
+     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search" >
+     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  {% for record in records %}
+     <hr>
+   {{ record.text }}
+  {% endfor %}
+  {% if records %}
+    <hr>
+  {% endif %}
   </body>
 </html>
